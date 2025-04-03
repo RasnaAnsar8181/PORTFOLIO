@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+       table td{
+            padding: 8px;
+        }
+    </style> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <table>
+        <tr>
+            <td class="txt">Enter a no:</td>
+            <td><input type="text" name="n1" id="n1"></td>
+        </tr>
+        <tr>
+            <td class="txt">Enter a no:</td>
+            <td><input type="text" name="n2" id="n2"></td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <button class="btn" onclick="add()">ADD</button>
+                <button class="btn" onclick="sub()">SUB</button>
+                <button class="btn" onclick="mul()">MUL</button>
+                <button class="btn" onclick="div()">DIV</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="txt">The result is :</td>
+            <td><input type="text" name="r1" id="r1"></td>
+        </tr>
+    </table>
+    <script>
+        function add()
+        {
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+            var result = parseInt(num1) + parseInt(num2);
+            document.getElementById("r1").value = result;
+        }
+
+        function sub()
+        {
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+            var result = parseInt(num1) - parseInt(num2);
+            document.getElementById("r1").value = result;
+        }
+
+        function mul()
+        {
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+            var result = parseInt(num1) * parseInt(num2);
+            document.getElementById("r1").value = result;
+        }
+
+        function div()
+        {
+            var num1 = document.getElementById("n1").value;
+            var num2 = document.getElementById("n2").value;
+            var result = parseInt(num1) / parseInt(num2);
+            document.getElementById("r1").value = result;
+        }
+    </script>
+</body>
+</html>
